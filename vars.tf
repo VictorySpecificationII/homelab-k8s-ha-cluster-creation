@@ -10,21 +10,21 @@ variable "template_name" {
 }
 
 variable "masters" {
-    default = 1
+    default = 0
 }
 
 variable "etcd" {
-    default = 1
+    default = 0
 }
 
 variable "workers" {
-    default = 1 
+    default = 0 
 }
 
 variable "stores" {
-    default = 1
+    default = 0
 }
 
 variable "lbs" {
-    default = 1
+    default = 0
 }

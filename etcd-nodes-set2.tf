@@ -3,7 +3,7 @@ resource "proxmox_vm_qemu" "kube-etcd-set2" {
   name = "set2-kube-etcd-0${count.index + 1}"
   target_node = "cpu-3"
 
-  clone = "cloudinit-ubuntu-2004"
+  clone = var.template_name
 
   agent = 1
   os_type = "cloud-init"

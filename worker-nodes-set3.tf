@@ -3,7 +3,7 @@ resource "proxmox_vm_qemu" "kube-agent-set3" {
   name = "set3-kube-agent-0${count.index + 1}"
   target_node = "cpu-4"
 
-  clone = "cloudinit-ubuntu-2004"
+  clone = var.template_name
 
   agent = 1 
   os_type = "cloud-init"
