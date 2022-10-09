@@ -41,8 +41,8 @@ resource "proxmox_vm_qemu" "kube-agent-set2" {
 
   ipconfig0 = "ip=10.98.66.2${count.index + 1}/8,gw=10.0.0.1"
   ipconfig1 = "ip=10.17.0.5${count.index + 1}/8"
-  sshkeys = <<EOF
-  ${var.ssh_key}
-  EOF
+#  sshkeys = <<EOF
+#  ${var.ssh_key}
+#  EOF
 }
 

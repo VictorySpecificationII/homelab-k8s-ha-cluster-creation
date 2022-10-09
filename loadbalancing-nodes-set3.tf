@@ -41,7 +41,7 @@ resource "proxmox_vm_qemu" "kube-lb-set3" {
 
   ipconfig0 = "ip=10.98.68.3${count.index + 1}/8,gw=10.0.0.1"
   ipconfig1 = "ip=10.17.0.15${count.index + 1}/8"
-  sshkeys = <<EOF
-  ${var.ssh_key}
-  EOF
+#  sshkeys = <<EOF
+#  ${var.ssh_key}
+#  EOF
 }
