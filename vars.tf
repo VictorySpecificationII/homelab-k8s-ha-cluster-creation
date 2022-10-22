@@ -28,3 +28,11 @@ variable "stores" {
 variable "lbs" {
     default = 0
 }
+
+variable "lnxjumpbox" {
+    default = 0
+}
+
+variable "winjumpbox" {
+    default = 0
+}
