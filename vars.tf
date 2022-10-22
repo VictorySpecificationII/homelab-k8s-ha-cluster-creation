@@ -14,7 +14,7 @@ variable "masters" {
 }
 
 variable "etcd" {
-    default = 0
+    default = 1
 }
 
 variable "workers" {
@@ -26,6 +26,10 @@ variable "stores" {
 }
 
 variable "lbs" {
+    default = 0
+}
+
+variable "devopscontroller"{
     default = 0
 }
 
