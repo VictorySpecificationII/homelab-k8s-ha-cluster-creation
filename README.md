@@ -1,6 +1,6 @@
-# jubilant-octo-guide
+# homelab-k8s-ha-cluster-creation
 
-A Kubernetes HA, non-stacked ETCD cluster deployment blueprint for the homelab.
+A Kubernetes HA, non-stacked ETCD cluster deployment blueprint for the homelab. Developed for Proxmox VE.
 
 # Setup
 
@@ -10,12 +10,21 @@ A Kubernetes HA, non-stacked ETCD cluster deployment blueprint for the homelab.
  
  # Usage
  
- On your DevOps/Jump Box install Terraform and run:
- 
-  - terraform init
-  - terraform plan -out k8s-ha
-  - terraform apply k8s-ha
- 
+ On your DevOps box install Terraform and run:
+```
+ terraform init
+```
+
+Then, save your plan using a name - here I use k8s-ha but really it could be any name you want.
+```
+terraform plan -out k8s-ha
+```
+
+Last step is to run
+```
+terraform apply k8s-ha
+``` 
+and go make yourself a cup of tea  until it's ready.
 
 # Some observations
 
