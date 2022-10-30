@@ -10,27 +10,28 @@ variable "template_name" {
 }
 
 variable "masters" {
-    default = 0
+    default = 1
 }
 
 variable "etcd" {
-    default = 0
+    default = 1
 }
 
 variable "workers" {
-    default = 0 
+    default = 1 
 }
 
 variable "stores" {
-    default = 0
+    default = 1
 }
 
 variable "lbs" {
-    default = 0
+    default = 1
 }
 
-variable "devopscontroller"{
-    default = 0
+# rename to platformcontroller and modify tf files to match
+variable "platformcontroller"{
+    default = 1
 }
 
 variable "lnxjumpbox" {
